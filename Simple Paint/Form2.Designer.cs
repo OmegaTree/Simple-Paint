@@ -57,7 +57,7 @@
             // lblSure
             // 
             this.lblSure.AutoSize = true;
-            this.lblSure.Location = new System.Drawing.Point(75, 34);
+            this.lblSure.Location = new System.Drawing.Point(76, 38);
             this.lblSure.Name = "lblSure";
             this.lblSure.Size = new System.Drawing.Size(72, 13);
             this.lblSure.TabIndex = 8;

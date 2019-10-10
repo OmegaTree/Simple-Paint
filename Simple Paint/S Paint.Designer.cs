@@ -34,9 +34,10 @@
             this.btnClearCanvas = new System.Windows.Forms.Button();
             this.imgSPaint = new System.Windows.Forms.PictureBox();
             this.grpControl = new System.Windows.Forms.GroupBox();
-            this.txtTimer = new System.Windows.Forms.TextBox();
-            this.lblCounter = new System.Windows.Forms.Label();
             this.btnReplay = new System.Windows.Forms.Button();
+            this.lblCounter = new System.Windows.Forms.Label();
+            this.txtTimer = new System.Windows.Forms.TextBox();
+            this.btnReplayClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgSPaint)).BeginInit();
             this.grpControl.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +86,7 @@
             // 
             // grpControl
             // 
+            this.grpControl.Controls.Add(this.btnReplayClear);
             this.grpControl.Controls.Add(this.btnReplay);
             this.grpControl.Controls.Add(this.lblCounter);
             this.grpControl.Controls.Add(this.txtTimer);
@@ -98,23 +100,6 @@
             this.grpControl.TabIndex = 7;
             this.grpControl.TabStop = false;
             // 
-            // txtTimer
-            // 
-            this.txtTimer.Location = new System.Drawing.Point(6, 421);
-            this.txtTimer.Name = "txtTimer";
-            this.txtTimer.Size = new System.Drawing.Size(201, 20);
-            this.txtTimer.TabIndex = 8;
-            this.txtTimer.TextChanged += new System.EventHandler(this.TxtTimer_TextChanged);
-            // 
-            // lblCounter
-            // 
-            this.lblCounter.AutoSize = true;
-            this.lblCounter.BackColor = System.Drawing.Color.White;
-            this.lblCounter.Location = new System.Drawing.Point(13, 652);
-            this.lblCounter.Name = "lblCounter";
-            this.lblCounter.Size = new System.Drawing.Size(0, 13);
-            this.lblCounter.TabIndex = 8;
-            // 
             // btnReplay
             // 
             this.btnReplay.Location = new System.Drawing.Point(6, 141);
@@ -125,6 +110,33 @@
             this.btnReplay.UseVisualStyleBackColor = true;
             this.btnReplay.Click += new System.EventHandler(this.BtnReplay_Click);
             // 
+            // lblCounter
+            // 
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.BackColor = System.Drawing.Color.White;
+            this.lblCounter.Location = new System.Drawing.Point(13, 652);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(0, 13);
+            this.lblCounter.TabIndex = 8;
+            // 
+            // txtTimer
+            // 
+            this.txtTimer.Location = new System.Drawing.Point(6, 421);
+            this.txtTimer.Name = "txtTimer";
+            this.txtTimer.Size = new System.Drawing.Size(201, 20);
+            this.txtTimer.TabIndex = 8;
+            this.txtTimer.TextChanged += new System.EventHandler(this.TxtTimer_TextChanged);
+            // 
+            // btnReplayClear
+            // 
+            this.btnReplayClear.Location = new System.Drawing.Point(87, 141);
+            this.btnReplayClear.Name = "btnReplayClear";
+            this.btnReplayClear.Size = new System.Drawing.Size(75, 23);
+            this.btnReplayClear.TabIndex = 8;
+            this.btnReplayClear.Text = "Clear Replay";
+            this.btnReplayClear.UseVisualStyleBackColor = true;
+            this.btnReplayClear.Click += new System.EventHandler(this.BtnReplayClear_Click);
+            // 
             // SPaint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,7 +145,10 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.grpControl);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "SPaint";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SPaint";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
@@ -156,6 +171,7 @@
         private System.Windows.Forms.TextBox txtTimer;
         private System.Windows.Forms.Label lblCounter;
         private System.Windows.Forms.Button btnReplay;
+        private System.Windows.Forms.Button btnReplayClear;
     }
 }
 

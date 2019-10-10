@@ -24,37 +24,37 @@ namespace Simple_Paint
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Black;
+            SPaint.colourChosen = Color.Black;
         }
 
         private void ClrBlue_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Blue;
+            SPaint.colourChosen = Color.Blue;
         }
 
         private void ClrRed_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Red;
+            SPaint.colourChosen = Color.Red;
         }
 
         private void ClrGreen_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Green;
+            SPaint.colourChosen = Color.Green;
         }
 
         private void ClrCyan_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Cyan;
+            SPaint.colourChosen = Color.Cyan;
         }
 
         private void ClrMagenta_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Magenta;
+            SPaint.colourChosen = Color.Magenta;
         }
 
         private void ClrYellow_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Yellow;
+            SPaint.colourChosen = Color.Yellow;
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Simple_Paint
 
         private void Ereaser_Click(object sender, EventArgs e)
         {
-            SPaint.clrChosen = Color.Transparent;
+            SPaint.colourChosen = Color.Transparent;
         }
     }
 }
