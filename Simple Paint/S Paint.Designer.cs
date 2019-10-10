@@ -35,6 +35,8 @@
             this.imgSPaint = new System.Windows.Forms.PictureBox();
             this.grpControl = new System.Windows.Forms.GroupBox();
             this.txtTimer = new System.Windows.Forms.TextBox();
+            this.lblCounter = new System.Windows.Forms.Label();
+            this.btnReplay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgSPaint)).BeginInit();
             this.grpControl.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +85,8 @@
             // 
             // grpControl
             // 
+            this.grpControl.Controls.Add(this.btnReplay);
+            this.grpControl.Controls.Add(this.lblCounter);
             this.grpControl.Controls.Add(this.txtTimer);
             this.grpControl.Controls.Add(this.btnColorChooser);
             this.grpControl.Controls.Add(this.MouseCoordinates);
@@ -101,6 +105,25 @@
             this.txtTimer.Size = new System.Drawing.Size(201, 20);
             this.txtTimer.TabIndex = 8;
             this.txtTimer.TextChanged += new System.EventHandler(this.TxtTimer_TextChanged);
+            // 
+            // lblCounter
+            // 
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.BackColor = System.Drawing.Color.White;
+            this.lblCounter.Location = new System.Drawing.Point(13, 652);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(0, 13);
+            this.lblCounter.TabIndex = 8;
+            // 
+            // btnReplay
+            // 
+            this.btnReplay.Location = new System.Drawing.Point(6, 141);
+            this.btnReplay.Name = "btnReplay";
+            this.btnReplay.Size = new System.Drawing.Size(75, 23);
+            this.btnReplay.TabIndex = 8;
+            this.btnReplay.Text = "Replay";
+            this.btnReplay.UseVisualStyleBackColor = true;
+            this.btnReplay.Click += new System.EventHandler(this.BtnReplay_Click);
             // 
             // SPaint
             // 
@@ -131,6 +154,8 @@
         private System.Windows.Forms.PictureBox imgSPaint;
         private System.Windows.Forms.GroupBox grpControl;
         private System.Windows.Forms.TextBox txtTimer;
+        private System.Windows.Forms.Label lblCounter;
+        private System.Windows.Forms.Button btnReplay;
     }
 }
 

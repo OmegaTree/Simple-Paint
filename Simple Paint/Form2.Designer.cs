@@ -31,6 +31,7 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblSure = new System.Windows.Forms.Label();
+            this.txtYesNo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOK
@@ -62,11 +63,20 @@
             this.lblSure.TabIndex = 8;
             this.lblSure.Text = "Are you sure?";
             // 
+            // txtYesNo
+            // 
+            this.txtYesNo.Location = new System.Drawing.Point(63, 54);
+            this.txtYesNo.Name = "txtYesNo";
+            this.txtYesNo.Size = new System.Drawing.Size(100, 20);
+            this.txtYesNo.TabIndex = 9;
+            this.txtYesNo.TextChanged += new System.EventHandler(this.TxtYesNo_TextChanged);
+            // 
             // ClearScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 146);
+            this.Controls.Add(this.txtYesNo);
             this.Controls.Add(this.lblSure);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
@@ -81,5 +91,6 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblSure;
+        private System.Windows.Forms.TextBox txtYesNo;
     }
 }
