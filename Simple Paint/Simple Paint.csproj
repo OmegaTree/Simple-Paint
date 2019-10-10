@@ -52,28 +52,28 @@
     <Compile Include="ColourChooser.Designer.cs">
       <DependentUpon>ColourChooser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ClearScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ClearScreen.Designer.cs">
+      <DependentUpon>ClearScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="S Paint.cs">
+    <Compile Include="SPaint.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="S Paint.Designer.cs">
-      <DependentUpon>S Paint.cs</DependentUpon>
+    <Compile Include="SPaint.Designer.cs">
+      <DependentUpon>SPaint.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ColourChooser.resx">
       <DependentUpon>ColourChooser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ClearScreen.resx">
+      <DependentUpon>ClearScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="S Paint.resx">
-      <DependentUpon>S Paint.cs</DependentUpon>
+    <EmbeddedResource Include="SPaint.resx">
+      <DependentUpon>SPaint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
